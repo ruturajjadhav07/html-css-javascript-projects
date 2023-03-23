@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+h1{
+    align-items: center;
+    font-size: 25px;
+}
+
+.button{
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    background-color: violet;
+    color: black;
+}
+
+.button:hover{
+    background-color: brown;
+    color: aqua;
+    cursor: pointer;
+    
+}
