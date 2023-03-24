@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Converter</title>
+    <script src="app.js"></script>
+
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1603553329474-99f95f35394f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80");
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 630px;
+            margin-top: 100px;
+        }
+
+        input {
+            opacity: 1;
+            border: 2px solid black;
+        }
+
+        span {
+            background-color: whitesmoke;
+        }
+
+        #outputKMph {
+            color: black;
+        }
+
+        span#outputKMph {
+            padding: 0px 20px;
+            border: 2px solid black;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Speed Converter</h1>
+        <h2>Convert Speed From Miles To Kilometer</h2>
+        <div>
+            <h3>MPH</h3>
+            <input type="text" name="speed" id="inputmhr" placeholder="Mhr" onchange="speedconvert(this.value)"
+                oninput="speedconvert(this.value)">
+        </div>
+        <div>
+            <h3>MPH</h3>
+             <span id="outputKMph"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
