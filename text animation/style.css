@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 58px;
+}
+
+h1 {
+    margin: 1px;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    animation: gradient 35s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+    to {
+        background-position: 2250vh;
+    }
+}
